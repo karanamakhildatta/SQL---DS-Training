@@ -116,7 +116,9 @@ WHERE (department = 'Engineering' OR department = 'Marketing')
 ### 1.5 Practice Exercise
 
 1. Write a query to select the names and salaries of employees who has salary greater than 25000 and work in the 'Sales' department.
-
+```sql
+SELECT name, salary FROM employees WHERE salary > 25000 AND department = "Sales";
+```
 2. Write a query to find all employees with a salary less than 40000 or who were hired before 2019.
 
 Questions for Practice:
