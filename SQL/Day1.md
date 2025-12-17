@@ -120,7 +120,12 @@ WHERE (department = 'Engineering' OR department = 'Marketing')
 SELECT name, salary FROM employees WHERE salary > 25000 AND department = "Sales";
 ```
 2. Write a query to find all employees with a salary less than 40000 or who were hired before 2019.
-
+```sql
+SELECT * FROM `employees` WHERE salary < 40000 or hire_date <= '2018-12-31';
+```
+```
+SELECT * FROM `employees` WHERE salary < 40000 or hire_date < '2019-01-01';
+```
 Questions for Practice:
 
 1. Write a query to select the product names and prices of products that belong to the 'Electronics' category and have a price greater than 100.
