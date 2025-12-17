@@ -123,7 +123,7 @@ SELECT name, salary FROM employees WHERE salary > 25000 AND department = "Sales"
 ```sql
 SELECT * FROM `employees` WHERE salary < 40000 or hire_date <= '2018-12-31';
 ```
-```
+```sql
 SELECT * FROM `employees` WHERE salary < 40000 or hire_date < '2019-01-01';
 ```
 Questions for Practice:
