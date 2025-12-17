@@ -141,3 +141,6 @@ SELECT * FROM `products` WHERE stock = 0 OR price < 50;
 SELECT * FROM `products` WHERE `category` <> 'Decor';
 ```
 4. Write a query to select all products that have a price between 50 and 150 (inclusive).
+```sql
+SELECT * FROM `products` WHERE price BETWEEN 50 and 150;
+```
