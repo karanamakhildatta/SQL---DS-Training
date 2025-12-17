@@ -115,15 +115,35 @@ WHERE (department = 'Engineering' OR department = 'Marketing')
 
 ### 1.5 Practice Exercise
 
-1. Write a query to select the names and ages of employees who are older than 25 and work in the 'Sales' department.
-
+1. Write a query to select the names and salaries of employees who has salary greater than 25000 and work in the 'Sales' department.
+```sql
+SELECT name, salary FROM employees WHERE salary > 25000 AND department = "Sales";
+```
 2. Write a query to find all employees with a salary less than 40000 or who were hired before 2019.
-
+```sql
+SELECT * FROM `employees` WHERE salary < 40000 or hire_date <= '2018-12-31';
+```
+```sql
+SELECT * FROM `employees` WHERE salary < 40000 or hire_date < '2019-01-01';
+```
 Questions for Practice:
 
 1. Write a query to select the product names and prices of products that belong to the 'Electronics' category and have a price greater than 100.
+ ```sql
+ SELECT product_name, price FROM `products` WHERE category = 'Electronics' and price > 100;
+```
 2. Write a query to find all products that are either out of stock (stock = 0) or have a price less than 50.
-
+```sql
+SELECT * FROM `products` WHERE stock = 0 OR price < 50;
+```
 3. Write a query to select all products that do not belong to the 'Decor' category.
-
+```sql
+SELECT * FROM `products` WHERE `category` <> 'Decor';
+```
 4. Write a query to select all products that have a price between 50 and 150 (inclusive).
+```sql
+SELECT * FROM `products` WHERE price BETWEEN 50 and 150;
+```
+```sql
+SELECT * FROM `products` WHERE price>= 50 and price <= 150;
+```
