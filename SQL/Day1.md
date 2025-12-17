@@ -137,5 +137,7 @@ Questions for Practice:
 SELECT * FROM `products` WHERE stock = 0 OR price < 50;
 ```
 3. Write a query to select all products that do not belong to the 'Decor' category.
-
+```sql
+SELECT * FROM `products` WHERE `category` <> 'Decor';
+```
 4. Write a query to select all products that have a price between 50 and 150 (inclusive).
