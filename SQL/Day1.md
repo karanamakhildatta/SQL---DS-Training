@@ -129,8 +129,13 @@ SELECT * FROM `employees` WHERE salary < 40000 or hire_date < '2019-01-01';
 Questions for Practice:
 
 1. Write a query to select the product names and prices of products that belong to the 'Electronics' category and have a price greater than 100.
+ ```sql
+ SELECT product_name, price FROM `products` WHERE category = 'Electronics' and price > 100;
+```
 2. Write a query to find all products that are either out of stock (stock = 0) or have a price less than 50.
-
+```sql
+SELECT * FROM `products` WHERE stock = 0 OR price < 50;
+```
 3. Write a query to select all products that do not belong to the 'Decor' category.
 
 4. Write a query to select all products that have a price between 50 and 150 (inclusive).
