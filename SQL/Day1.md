@@ -115,7 +115,7 @@ WHERE (department = 'Engineering' OR department = 'Marketing')
 
 ### 1.5 Practice Exercise
 
-1. Write a query to select the names and ages of employees who are older than 25 and work in the 'Sales' department.
+1. Write a query to select the names and salaries of employees who has salary greater than 25000 and work in the 'Sales' department.
 
 2. Write a query to find all employees with a salary less than 40000 or who were hired before 2019.
 
