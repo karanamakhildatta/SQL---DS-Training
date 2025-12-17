@@ -119,12 +119,7 @@ WHERE (department = 'Engineering' OR department = 'Marketing')
 
 2. Write a query to find all employees with a salary less than 40000 or who were hired before 2019.
 
-Questions related to products table: # Name Type Collation Attributes Null Default Comments Extra Action
-1 product_id Primary int(11) No None Change Change Drop Drop
-2 product_name varchar(100) utf8mb4_general_ci Yes NULL Change Change Drop Drop
-3 category varchar(50) utf8mb4_general_ci Yes NULL Change Change Drop Drop
-4 price int(11) Yes NULL Change Change Drop Drop
-5 stock int(11)
+Questions for Practice:
 
 1. Write a query to select the product names and prices of products that belong to the 'Electronics' category and have a price greater than 100.
 2. Write a query to find all products that are either out of stock (stock = 0) or have a price less than 50.
