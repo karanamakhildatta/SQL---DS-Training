@@ -144,3 +144,6 @@ SELECT * FROM `products` WHERE `category` <> 'Decor';
 ```sql
 SELECT * FROM `products` WHERE price BETWEEN 50 and 150;
 ```
+```sql
+SELECT * FROM `products` WHERE price>= 50 and price <= 150;
+```
