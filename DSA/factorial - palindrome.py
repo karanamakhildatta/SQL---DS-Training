@@ -17,7 +17,4 @@ def factorial(n):
         n = n - 1
     return result   
 
-while n >= 1:
-    result = result * n
-    n = n -1
 
