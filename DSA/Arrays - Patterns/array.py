@@ -33,6 +33,18 @@ def count_occurrences(arr, target):
     '''
     count  = 0
     for num in arr:
-        if num ==target:
+        if num == target:
             count = count + 1
     return count
+def count_perfect_squares(arr):
+    '''
+    Find count of perfect squares in array
+    '''
+    count = 0
+    for num in arr:
+        if num**0.5 == int(num**0.5):
+            count += 1
+    return count
+
+
+
